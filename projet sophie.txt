@@ -1,0 +1,42 @@
+rouge egal alerte => pas envie de cliquer
+mettre boutonS en bleu
+
+
+mettre une seule couleur d'ecriture
+
+
+
+Presta titre avec encadré prix et pas de photo ?
+
+
+
+ACCUEIL ////
+
+taille minimum des texte de 16px => pas en dessous
+Titre entre 18/28 et +
+
+augmenter inter linéage du titre / diminuer legerement dans le texte
+mettre bouton en bleu + ecriture en noir
+
+Typo sur bouton environ 14 px / pour 40 de haut ( voir si bouton ajustable )
+pour le en savoir plus
+
+
+Prestation => augmenter taille du titre Les prestation
+
+
+// Certif //
+add titre
+
+Direct apres les prestations 
+=> avant actu
+add third color dans les icons , tritres etc 
+
+nom de famille en maj avant prénom => en vert BOLD
+
+reduire interlineage => corps de texte en 16 !!!!! En noir regular + descendre le txt
+
+légende ex en italique
+
+
+question sur les tarifs ? ce qelle a en tete et ce quelle propose

@@ -24,7 +24,7 @@ ul {
 
 p {
 	color: #9a9a9a;
-	font-size: 13px;
+	font-size: 16px;
 	line-height: 24px;
 }
 
@@ -32,7 +32,7 @@ p {
 	display: inline-block;
 	background-color: #DB6A8F;
 	color: #fff;
-	font-size: 13px;
+	font-size: 16px;
 	text-transform: uppercase;
 	font-weight: 500;
 	padding: 12px 20px;
@@ -45,7 +45,7 @@ p {
 	display: inline-block;
 	background-color: #fff;
 	color: #DB6A8F;
-	font-size: 13px;
+	font-size: 16px;
 	text-transform: uppercase;
 	font-weight: 500;
 	padding: 12px 20px;
@@ -58,7 +58,7 @@ p {
 	display: inline-block;
 	background-color: transparent;
 	color: #fff;
-	font-size: 13px;
+	font-size: 16px;
 	text-transform: uppercase;
 	font-weight: 500;
 	padding: 12px 20px;
@@ -115,7 +115,7 @@ p {
 
 .navbar-nav li a {
 	font-family: 'Roboto', sans-serif;
-	font-size: 13px;
+	font-size: 16px;
 	text-transform: uppercase;
 	color: #363e50!important;
 	letter-spacing: 0.5px;
@@ -168,7 +168,7 @@ bootstrap.min.css:5
 	margin-top: 0px;
 	font-family: 'Roboto', sans-serif;
 	font-weight: 700;
-	font-size: 15px;
+	font-size: 18px;
 	color: #fff;
 	text-transform: uppercase;
 	letter-spacing: 0.5px;
@@ -184,7 +184,7 @@ bootstrap.min.css:5
 
 .banner p {
 	color: #fff;
-	font-size: 14px;
+	font-size: 16px;
 }
 
 .banner .primary-button {
@@ -290,11 +290,19 @@ section.services {
 }
 
 .services .service-item img {
-	max-width: 100%;
+	width: 250px; /* Largeur fixe */
+	height: 150px; /* Hauteur fixe */
 	overflow: hidden;
-	border: 10px solid #A7E0E0;
+	border: 10px solid #4AA3A2;
 	border-radius: 50%;
 }
+/* Media Queries pour les écrans plus petits */
+@media only screen and (max-width: 768px) {
+	.service-item img {
+	  width: 150px; /* Largeur réduite pour les écrans plus petits */
+	  height: 100px; /* Hauteur réduite pour les écrans plus petits */
+	}
+  }
 
 .services .service-item h4 {
 	margin-top: 20px;
@@ -350,7 +358,7 @@ section#book-table .left-image img {
 	width: 100%;
 	outline: none;
 	border-bottom: 1px solid #eee;	
-	font-size: 14px;
+	font-size: 16px;
 	color: #9a9a9a;
 	padding-left: 10px;
 	height: 40px;
@@ -365,7 +373,7 @@ section#book-table .left-image img {
 	border-left: none;
 	border-top: none;
 	border-bottom: 1px solid #eee;
-	font-size: 14px;
+	font-size: 16px;
 	color: #9a9a9a;
 }
 
@@ -374,7 +382,7 @@ section#book-table .left-image img {
 	display: inline-block;
 	background-color: #DB6A8F;
 	color: #fff!important;
-	font-size: 13px;
+	font-size: 16px;
 	text-transform: uppercase;
 	font-weight: 500;
 	padding: 12px 20px;
@@ -472,7 +480,7 @@ section.featured-food1 {
 	color: #DB6A8F;
 	font-weight: 500;
 	letter-spacing: 0.5px;
-	padding: 8px 14px;
+	padding: 8px 16px;
 	position: absolute;
 	right: 45px;
 	margin-top: -40px;
@@ -536,14 +544,14 @@ section.our-blog {
 }
 
 .blog-post .right-content span {
-	font-size: 13px;
+	font-size: 16px;
 	color: #7a7a7a;
 	display: inline-block;
 	margin-bottom: 18px;
 }
 
 .blog-post .right-content .text-button a {
-	font-size: 13px;
+	font-size: 16px;
 	font-weight: 500;
 	color: #DB6A8F;
 	text-decoration: none;
@@ -559,7 +567,7 @@ section.our-blog {
 	letter-spacing: 0.5px;
 	padding: 8px 14px;
 	position: absolute;
-	left: 15px;
+	left: 18px;
 	top: 0px;
 	background-color: rgba(250, 250, 250, 0.9);
 }
@@ -593,7 +601,7 @@ section.sign-up {
 	display: inline-block;
 	background-color: transparent;
 	color: #fff!important;
-	font-size: 13px;
+	font-size: 16px;
 	text-transform: uppercase;
 	font-weight: 500;
 	padding: 12px 20px;
@@ -684,7 +692,7 @@ section.page-heading {
 
 .page-heading p {
 	color: #fff;
-	font-size: 14px;
+	font-size: 16px;
 	padding: 0px 25%;
 	margin-bottom: 0px;
 }
@@ -697,7 +705,7 @@ section.breakfast-menu {
 }
 
 section.breakfast-menu .price {
-	right: 15px;
+	right: 18px;
 }
 
 .breakfast-menu-content {
@@ -863,7 +871,7 @@ section.blog-page .page-number li a {
 	display: inline-block;
 	text-align: center;
 	background-color: #A7E0E0;
-	font-size: 15px;
+	font-size: 18px;
 	color: #343434;
 	font-weight: 700;
 	text-decoration: none;
@@ -898,14 +906,14 @@ section.blog-page .page-number li a:hover {
 }
 
 .blog-item .down-content span {
-	font-size: 13px;
+	font-size: 16px;
 	color: #7a7a7a;
 	display: inline-block;
 	margin-bottom: 18px;
 }
 
 .blog-item .down-content .text-button a {
-	font-size: 13px;
+	font-size: 16px;
 	font-weight: 500;
 	color: #DB6A8F;
 	text-decoration: none;
@@ -950,14 +958,14 @@ section.contact-us {
 .contact-us em {
 	font-style: normal;
 	font-weight: 500;
-	font-size: 15px;
+	font-size: 18px;
 	color: #aaa;
 }
 
 .contact-us input {
   border-radius: 3px;
   padding-left: 15px;
-  font-size: 13px;
+  font-size: 16px;
   color: #4a4a4a;
   background-color: #f4f4f4;
   outline: none!important;
@@ -973,7 +981,7 @@ section.contact-us {
   border-radius: 3px;
   padding-left: 15px;
   padding-top: 10px;
-  font-size: 13px;
+  font-size: 16px;
   color: #4a4a4a;
   background-color: #f4f4f4;
   outline: none;
@@ -990,7 +998,7 @@ section.contact-us {
 	display: inline-block;
 	background-color: #DB6A8F;
 	color: #fff!important;
-	font-size: 13px;
+	font-size: 16px;
 	text-transform: uppercase;
 	font-weight: 500;
 	padding: 12px 20px;
