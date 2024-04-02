@@ -104,22 +104,27 @@ http://www.templatemo.com/tm-507-victory
     <style>
         /* Styles CSS */
         .cadre-container {
-          display: flex;
-          justify-content: space-between;
-          align-items: center;
-          flex-wrap: wrap;
-          padding: 0 10px; /* Ajout de marges à gauche et à droite */
-        }
-    
-        .cadre {
-          width: calc(20% - 20px); /* Calcul de la largeur avec une marge de 20px */
-          padding: 20px;
-          margin-bottom: 20px;
-          border-radius: 20px;
-          background-color: #ffffff;
-          box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-          text-align: center;
-        }
+    display: flex;
+    justify-content: space-between; /* ou 'space-around' pour une distribution égale avec de l'espace autour des éléments */
+    align-items: stretch; /* s'assure que les éléments s'étendent à la même hauteur */
+    flex-wrap: wrap;
+    padding: 0 0px; /* Ajout de marges à gauche et à droite */
+    gap: 20px; 
+}
+
+.cadre {
+    flex: 1; /* Chaque cadre prendra une part égale de l'espace disponible */
+    min-width: calc(20% - 20px); /* Définit une largeur minimale pour les cadres */
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    display: flex;
+    flex-direction: column; /* Organise le contenu du cadre en colonne */
+    justify-content: space-between; /* Distribue l'espace entre les éléments du cadre */
+}
     
         .cadre .icone {
           background-color: #4AA3A2;
@@ -143,9 +148,9 @@ http://www.templatemo.com/tm-507-victory
         }
 
         @media only screen and (max-width: 768px) {
-  .cadre {
-    width: calc(100% - 20px); /* La largeur des cadres occupe toute la largeur sur les écrans plus petits */
-  }
+    .cadre {
+        min-width: 100%; /* Les cadres prendront toute la largeur sur les écrans plus petits */
+    }
 }
 
 /* Style pour le bouton */
@@ -183,7 +188,7 @@ http://www.templatemo.com/tm-507-victory
               </div>
               <br>
               <br>
-              <h3>Prestation X</h3>
+              <h3>Permanence d’écrivain public</h3>
               <br>
               <br>
             </div>
@@ -196,7 +201,7 @@ http://www.templatemo.com/tm-507-victory
               </div>
               <br>
               <br>
-              <h3>Prestation X</h3>
+              <h3>Biographie</h3>
               <br>
               <br>
             </div>
@@ -209,7 +214,7 @@ http://www.templatemo.com/tm-507-victory
               </div>
               <br>
               <br>
-              <h3>Prestation X</h3>
+              <h3>Texte de circonstance</h3>
               <br>
               <br>
             </div>
@@ -222,7 +227,7 @@ http://www.templatemo.com/tm-507-victory
               </div>
               <br>
               <br>
-              <h3>Prestation X</h3>
+              <h3>Correspondance administrative, privée, professionnelle</h3>
               <br>
               <br>
             </div>
@@ -235,11 +240,15 @@ http://www.templatemo.com/tm-507-victory
               </div>
               <br>
               <br>
-              <h3>Prestation X</h3>
+              <h3>Relecture-correction</h3>
+              <br>
+              <br>
               <br>
               <br>
               
             </div>
+
+            
            
           </div>
           <div class="btn-container">
