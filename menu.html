@@ -102,7 +102,7 @@ http://www.templatemo.com/tm-507-victory
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> 
             </div>
         </div>
     </section>
@@ -128,7 +128,8 @@ http://www.templatemo.com/tm-507-victory
                                 </p>
                                <br>
                                 <button id="ButtonLunch" type="button" class="btn custom-btn" style="background-color: #4AA3A2;">
-                                    <a href="blog.html" class="scroll-link" style="color: white;">En savoir plus </a>
+                                    <a href="biography.html" style="color: white;">En savoir plus </a>
+                                   
                                 </button>
                                
                             </div>
@@ -220,7 +221,7 @@ http://www.templatemo.com/tm-507-victory
                             <div class="col-md-7" style="padding-right: 60px;" >
                                 <h2 style="color: black;">Relecture-correction</h2>
                                 <p style="color: black; text-align: justify;">
-                                    Je relis et j’effectue la correction ortho-typographique de vos
+                                    Je relis et j’effectue la correction orthographiques et typographiques (ponctuation, espaces...) de vos
                                     écrits personnels, administratifs, professionnels et travaux
                                     universitaires. Je peux aussi vous apporter mon aide pour
                                     améliorer la rédaction ou la structure d’un document si vous le
@@ -255,7 +256,7 @@ http://www.templatemo.com/tm-507-victory
                                 </p>
 <br>
                                 <button id="ButtonLunch" type="button" class="btn custom-btn" style="background-color: #4AA3A2;">
-                                    <a href="blog.html" class="scroll-link" style="color: white;">En savoir plus </a>
+                                    <a href="atelier.html" style="color: white;">En savoir plus </a>
                                 </button>
                             </div>
                             <div class="col-md-5">
@@ -308,11 +309,10 @@ http://www.templatemo.com/tm-507-victory
 }
 
 .cadre {
-    flex: 1; /* Chaque cadre prendra une part égale de l'espace disponible */
-    min-width: calc(20% - 40px); /* Pour tenir compte de la marge de 20px de chaque côté */
+    flex: 0 1 30%; /* Each cadre will take up 30% of the width */
+    min-width: 250px; /* Minimum width for each cadre */
     padding: 20px;
     margin-bottom: 20px; /* Espace au-dessous de chaque cadre */
-    margin-right: 20px; /* Espace à droite de chaque cadre */
     border-radius: 20px;
     background-color: #ffffff;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
@@ -321,6 +321,10 @@ http://www.templatemo.com/tm-507-victory
     flex-direction: column;
     justify-content: space-between;
     box-sizing: border-box; /* S'assure que padding et border sont inclus dans la largeur/hauteur */
+}
+
+.cadre h5 {
+    font-size: 14px; /* Adjust font size if necessary */
 }
         
         .cadre .icone {
@@ -374,12 +378,52 @@ http://www.templatemo.com/tm-507-victory
         .btn:hover {
           background-color: #A7E0E0;
         }
+
+        .tooltip-target {
+    position: relative;
+    cursor: pointer;
+}
+
+.tooltip-target .tooltip-text {
+    visibility: hidden;
+    width: 200px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    padding: 5px 10px;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%; /* Position above the text */
+    left: 50%;
+    margin-left: -100px; /* Center the tooltip */
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.tooltip-target .tooltip-text::after {
+    content: '';
+    position: absolute;
+    top: 100%; /* At the bottom of the tooltip */
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent; /* Arrow pointing down */
+}
+
+.tooltip-target:hover .tooltip-text {
+    visibility: visible;
+    opacity: 1;
+}
         </style>
         <br><br>
         
         <section style="background-color: #DB6A8F;">
           <div class="container">
+            
             <br>
+            <h3 style="text-align: center;">Un projet ? Besoin de mes services ?</h3>
             <br>
             <div class="cadre-container">
               <div class="cadre">
@@ -390,9 +434,10 @@ http://www.templatemo.com/tm-507-victory
                 </div>
                 <br>
                 <p>A partir de</p>
-                <h3>50 euro / h</h3>
+                <h3>50 € *</h3>
+                <h5>Par Heure</h5>
                 <br>
-                <h4>Prestation 1</h4>
+                <h4>Permanence d’écrivain public</h4>
                 <br>
               </div>
               
@@ -404,9 +449,15 @@ http://www.templatemo.com/tm-507-victory
                 </div>
                 <br>
                 <p>A partir de</p>
-                <h3>60 euro / h</h3>
+                <h3>290€ * </h3>
+                <h5 class="tooltip-target">La séance  ⓘ
+                    <span class="tooltip-text"> <br>Particuliers, Professionnels, contactez-moi pour un devis au plus près de votre projet. <br> <br></span>
+                </h5>
                 <br>
-                <h4>Prestation 2</h4>
+                <h4  >Rédaction de votre biographie  
+                   
+
+                </h4>
                 <br>
               </div>
               
@@ -418,9 +469,10 @@ http://www.templatemo.com/tm-507-victory
                 </div>
                 <br>
                 <p>A partir de</p>
-                <h3>70 euro / h</h3>
+                <h3>50€ *</h3>
+                <h5>la page de 1500 signes, espaces comprises.</h5>
                 <br>
-                <h4>Prestation 3</h4>
+                <h4>Texte de circonstance</h4>
                 <br>
               </div>
               
@@ -432,9 +484,10 @@ http://www.templatemo.com/tm-507-victory
                 </div>
                 <br>
                 <p>A partir de</p>
-                <h3>80 euro / h</h3>
+                <h3>40€ *</h3>
+                <h5>la page de 1500 signes, espaces comprises.</h5>
                 <br>
-                <h4>Prestation 4</h4>
+                <h4>Correspondance</h4>
                 <br>
               </div>
               
@@ -446,14 +499,40 @@ http://www.templatemo.com/tm-507-victory
                 </div>
                 <br>
                 <p>A partir de</p>
-                <h3>90 euro / h</h3>
+                <h3> 5 € *</h3>
+                <h5 class="tooltip-target">Correction simple ⓘ
+                    <span class="tooltip-text"> <br>Correction simple: orthographe, grammaire, conjugaison et typographie <br> <br></span>
+                </h5>
+                <h3> 12 € *</h3>
+                <h5 class="tooltip-target">Correction approfondie ⓘ
+                    <span class="tooltip-text"><br>Correction approfondie: corrections simples + syntaxe, expression maladroite et reformulation partielle. <br> <br></span>
+                </h5>
                 <br>
-                <h4>Prestation 5</h4>
+                <h4>Relecture  Correction</h4>
                 <br>
               </div>
+
+              <div class="cadre">
+                <br>
+                <br>
+                <div class="icone">
+                  <i class="fas fa-paperclip"></i>
+                </div>
+                <br>
+                <p>A partir de</p>
+                <h3>Sur devis</h3>
+                <h4>Atelier D'écriture</h4>
+                <br>
+              </div>
+              
             </div>
+            
             <div class="btn-container">
-              <h3>Un projet ? Besoin de mes services ?</h3>
+             
+              <h5 style="font-style: italic; ">Les tarifs des prestations ne sont pas soumis à la T.V.A (Article 293B du Code général des Impôts)</h5>
+              <h5 style="font-style: italic; ">* Toutes Taxes Comprises</h5>
+              <br>
+              
               <a href="contact.html">
               <button class="btn" href="contact.html">CONTACTEZ-MOI</button></a>
             </div>
@@ -465,24 +544,26 @@ http://www.templatemo.com/tm-507-victory
 
 
 
- <footer>
+<footer>
     <div class="container">
         <div class="row">
             <div class="col-md-4">
                 <p>Developped And Edit by <em>Antoine MACHEDA</em></p>
+                
             </div>
-            
             <div class="col-md-4">
                 <ul class="social-icons">
-                    <li><a rel="nofollow" href="http://www.facebook.com/templatemo" target="_parent"><i class="fa fa-facebook"></i></a></li>
-                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                    <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                    <li><a href="#"><i class="fa fa-rss"></i></a></li>
-                    <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+                    
+                
+                
+                    <li><a href="https://www.linkedin.com/in/sophie-macheda-%C3%A9pith%C3%A8te-%C3%A9crivainpublic-biographe/?originalSubdomain=fr"><i class="fab fa-linkedin"></i></a></li>
+                    
+                    
                 </ul>
             </div>
             <div class="col-md-4">
                 <p>Copyright &copy; 2017 Victory Template</p>
+                
             </div>
         </div>
     </div>
