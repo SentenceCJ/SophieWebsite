@@ -24,7 +24,7 @@
 <body>
     <div class="header">
         <div class="container">
-            <img src="./img/epithete2.png" alt="Nom de l'image" width="17%">
+            <img src="./img/epithete3.png" alt="Nom de l'image" width="17%">
             <h3>Des prestations d’écriture adaptées à vos besoins</h3>
             <a class="navbar-brand scroll-top "></a>
             <nav class="navbar navbar-inverse" role="navigation">
@@ -58,11 +58,13 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-6 col-md-offset-3">
-                    <h4>Professionnels, collectivités et particuliers, je suis votre plume !</h4>
-                    <p>Parce que l’écrit est au cœur de notre quotidien, parce que les mots nous révèlent, nous exposent, orientent le regard que nous portons sur le monde, 
-                         pourquoi ne pas confier la rédaction de vos textes à une professionnelle
-                         pour vous assurer d’un travail de qualité ? Attentive à vos besoins et 
-                         soucieuse de la pertinence de votre texte auprès de son destinataire, je vous accompagne de toute mon expertise de la langue française et du plaisir du texte. Ecrivain public agréé par l’Académie des écrivains publics de France, j’en partage l’exigence, les valeurs et les règles déontologiques. Confiez-moi vos écrits.</p>
+                    <h4 style="font-size: 20px;">Professionnels, collectivités et particuliers, je suis votre plume !</h4>
+                    <p style="line-height: 1.8; font-size: 18px;">
+                        Parce que l’écrit est au cœur de notre quotidien, parce que les mots nous révèlent, nous exposent, orientent le regard que nous portons sur le monde, 
+                        pourquoi ne pas confier la rédaction de vos textes à une professionnelle
+                        pour vous assurer d’un travail de qualité ? Attentive à vos besoins et 
+                        soucieuse de la pertinence de votre texte auprès de son destinataire, je vous accompagne de toute mon expertise de la langue française et du plaisir du texte. Ecrivain public agréé par l’Académie des écrivains publics de France, j’en partage l’exigence, les valeurs et les règles déontologiques. Confiez-moi vos écrits.
+                    </p>
                     <!-- <button type="button" class="btn custom-btn" style="background-color: #DB6A8F;">
                         <a href="blog.html" class="scroll-link" style="color: white;">En savoir plus </a>
                     </button> -->
@@ -79,16 +81,15 @@
         /* Styles CSS */
         .cadre-container {
             display: flex;
-            justify-content: space-between; /* ou 'space-around' pour une distribution égale avec de l'espace autour des éléments */
-            align-items: stretch; /* s'assure que les éléments s'étendent à la même hauteur */
+            justify-content: space-between;
+            align-items: stretch;
             flex-wrap: wrap;
-            padding: 0 0px; /* Ajout de marges à gauche et à droite */
-            gap: 20px; 
+            padding: 0 10px;
+            gap: 10px;
         }
 
         .cadre {
-            flex: 1; /* Chaque cadre prendra une part égale de l'espace disponible */
-            min-width: calc(20% - 20px); /* Définit une largeur minimale pour les cadres */
+            flex: 1 1 calc(16% - 20px);
             padding: 20px;
             margin-bottom: 20px;
             border-radius: 20px;
@@ -96,8 +97,8 @@
             box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
             text-align: center;
             display: flex;
-            flex-direction: column; /* Organise le contenu du cadre en colonne */
-            justify-content: space-between; /* Distribue l'espace entre les éléments du cadre */
+            flex-direction: column;
+            justify-content: space-between;
         }
 
         .cadre .icone {
@@ -121,9 +122,21 @@
             margin: 0;
         }
 
+        @media only screen and (max-width: 1200px) {
+            .cadre {
+                flex: 1 1 calc(30% - 20px);
+            }
+        }
+
         @media only screen and (max-width: 768px) {
             .cadre {
-                min-width: 100%; /* Les cadres prendront toute la largeur sur les écrans plus petits */
+                flex: 1 1 calc(45% - 20px);
+            }
+        }
+
+        @media only screen and (max-width: 576px) {
+            .cadre {
+                flex: 1 1 calc(100% - 20px);
             }
         }
 
@@ -213,7 +226,21 @@
                     </div>
                     <br>
                     <br>
-                    <h3>Relecture-correction</h3>
+                    <h3>Relecture correction</h3>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                </div>
+                <div class="cadre">
+                    <br>
+                    <br>
+                    <div class="icone">
+                        <i class="fas fa-paperclip"></i>
+                    </div>
+                    <br>
+                    <br>
+                    <h3>Atelier d'écriture</h3>
                     <br>
                     <br>
                     <br>

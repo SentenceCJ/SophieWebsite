@@ -40,3 +40,7 @@ légende ex en italique
 
 
 question sur les tarifs ? ce qelle a en tete et ce quelle propose
+
+
+//////////// 31/05 ////////////
+changement media query sur le format tablette des icons doctorats => to do 
