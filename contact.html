@@ -1,69 +1,62 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-<!--
-Victory Template
-http://www.templatemo.com/tm-507-victory
--->
-        <title>Contact</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Contact</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="css/fontAwesome.css">
+    <link rel="stylesheet" href="css/hero-slider.css">
+    <link rel="stylesheet" href="css/owl-carousel.css">
+    <link rel="stylesheet" href="css/templatemo-style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Spectral:200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
+    <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        function sendEmail() {
+            var name = document.getElementById('name').value;
+            var email = document.getElementById('email').value;
+            var phone = document.getElementById('phone').value;
+            var message = document.getElementById('message').value;
 
-        <link rel="stylesheet" href="css/bootstrap.min.css">
-        <link rel="stylesheet" href="css/bootstrap-theme.min.css">
-        <link rel="stylesheet" href="css/fontAwesome.css">
-        <link rel="stylesheet" href="css/hero-slider.css">
-        <link rel="stylesheet" href="css/owl-carousel.css">
-        <link rel="stylesheet" href="css/templatemo-style.css">
-
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-
-        <link href="https://fonts.googleapis.com/css?family=Spectral:200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
-
-        <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
-
-        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    </head>
-
-    <body>
-        <div class="header">
-            <div class="container">
-                <img id="epi" src="./img/epithete3.png" alt="Nom de l'image" width="17%" >
-                <h3>Accompagner, transmettre, partager</h3>
-                <a href="#" class="navbar-brand scroll-top "></a>
-               
-                <nav class="navbar navbar-inverse" role="navigation">
-                    <div class="navbar-header">
-                        <button type="button" id="nav-toggle" class="navbar-toggle" data-toggle="collapse" data-target="#main-nav">
-                            <span class="sr-only">Toggle navigation</span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                        </button>
-                    </div>
-                    <!--/.navbar-header-->
-                    <div id="main-nav" class="collapse navbar-collapse">
-                        <ul class="nav navbar-nav">
-                            <li><a href="index.html">Accueil</a></li>
-                            <li><a href="blog.html">Qui suis-je ?</a></li>
-                            <li><a href="menu.html">Prestations & Tarifs</a></li>
-                            <li><a href="contact.html">Contact </a></li>
-                            <li><a href="actualité.html">Actualités </a></li>
-                        </ul>
-                    </div>
-                    <!--/.navbar-collapse-->
-                </nav>
-                <!--/.navbar-->
-           
-            </div>
-            <!--/.container-->
+            var mailtoLink = `mailto:epithete.ms@free.fr?subject=Contact&body=Nom: ${name}%0AEmail: ${email}%0ATéléphone: ${phone}%0AMessage:%0A${message}`;
+            window.location.href = mailtoLink;
+        }
+    </script>
+</head>
+<body>
+    <div class="header">
+        <div class="container">
+            <img id="epi" src="./img/epithete3.png" alt="Nom de l'image" width="17%">
+            <h3>Accompagner, transmettre, partager</h3>
+            <a href="#" class="navbar-brand scroll-top "></a>
+            <nav class="navbar navbar-inverse" role="navigation">
+                <div class="navbar-header">
+                    <button type="button" id="nav-toggle" class="navbar-toggle" data-toggle="collapse" data-target="#main-nav">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+                <div id="main-nav" class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav">
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="blog.html">Qui suis-je ?</a></li>
+                        <li><a href="menu.html">Prestations & Tarifs</a></li>
+                        <li><a href="contact.html">Contact </a></li>
+                        <li><a href="actualité.html">Actualités </a></li>
+                    </ul>
+                </div>
+            </nav>
         </div>
-        <!--/.header-->
-
+    </div>
 
     <section class="page-heading">
         <div class="container">
@@ -76,8 +69,6 @@ http://www.templatemo.com/tm-507-victory
         </div>
     </section>
 
-
-
     <section class="contact-us">
         <div class="container">
             <div class="row">
@@ -85,14 +76,14 @@ http://www.templatemo.com/tm-507-victory
                     <div class="section-heading">
                         <h2>Message</h2>
                     </div>
-                    <form id="contact" action="" method="post">
+                    <!-- <form id="contact" onsubmit="sendEmail(); return false;">
                         <div class="row">
                             <div class="col-md-6">
                                 <fieldset>
                                     <input name="name" type="text" class="form-control" id="name" placeholder="Nom..." required>
                                 </fieldset>
                                 <fieldset>
-                                    <input name="email" type="text" class="form-control" id="email" placeholder="Email..." required>
+                                    <input name="email" type="email" class="form-control" id="email" placeholder="Email..." required>
                                 </fieldset>
                                 <fieldset>
                                     <input name="phone" type="text" class="form-control" id="phone" placeholder="Téléphone..." required>
@@ -103,7 +94,30 @@ http://www.templatemo.com/tm-507-victory
                                     <textarea name="message" rows="6" class="form-control" id="message" placeholder="Votre message..." required></textarea>
                                 </fieldset>
                                 <fieldset>
-                                    <button type="submit" id="form-submit" class="btn" style="background-color: #4AA3A2;">Envoyer</button>
+                                    <button type="submit" class="btn" style="background-color: #4AA3A2;">Envoyer</button>
+                                </fieldset>
+                            </div>
+                        </div>
+                    </form> -->
+                    <form action="https://formsubmit.co/machedaantoine@gmail.com" method="POST">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <fieldset>
+                                    <input name="name" type="text" class="form-control"  placeholder="Nom..." required>
+                                </fieldset>
+                                <fieldset>
+                                    <input name="email" type="email" class="form-control"  placeholder="Email..." required>
+                                </fieldset>
+                                <fieldset>
+                                    <input name="Sujet" type="text" class="form-control"  placeholder="Sujet..." required>
+                                </fieldset>
+                            </div>
+                            <div class="col-md-6">
+                                <fieldset>
+                                    <textarea name="message" rows="6" class="form-control"  placeholder="Votre message..." required></textarea>
+                                </fieldset>
+                                <fieldset>
+                                    <button type="submit" class="btn" style="background-color: #4AA3A2;">Envoyer</button>
                                 </fieldset>
                             </div>
                         </div>
@@ -122,63 +136,41 @@ http://www.templatemo.com/tm-507-victory
         </div>
     </section>
 
-
-
-    
-
-
-
     <footer>
         <div class="container">
             <div class="row">
                 <div class="col-md-4">
                     <p>Developped And Edit by <em>Antoine MACHEDA</em></p>
-                    
                 </div>
                 <div class="col-md-4">
                     <ul class="social-icons">
-                        
-                    
-                    
                         <li><a href="https://www.linkedin.com/in/sophie-macheda-%C3%A9pith%C3%A8te-%C3%A9crivainpublic-biographe/?originalSubdomain=fr"><i class="fab fa-linkedin"></i></a></li>
-                        
-                        
                     </ul>
                 </div>
                 <div class="col-md-4">
                     <p>Copyright &copy; 2017 Victory Template</p>
-                    
                 </div>
             </div>
         </div>
     </footer>
 
-
-    <!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script> -->
-
     <script src="js/vendor/bootstrap.min.js"></script>
-
     <script type="text/javascript">
         $(document).ready(function() {
-            // navigation click actions 
             $('.scroll-link').on('click', function(event){
                 event.preventDefault();
                 var sectionID = $(this).attr("data-id");
                 scrollToID('#' + sectionID, 750);
             });
-            // scroll to top action
             $('.scroll-top').on('click', function(event) {
                 event.preventDefault();
                 $('html, body').animate({scrollTop:0}, 'slow');         
             });
-            // mobile nav toggle
             $('#nav-toggle').on('click', function (event) {
                 event.preventDefault();
                 $('#main-nav').toggleClass("open");
             });
         });
-        
-        </script> 
+    </script> 
 </body>
 </html>
